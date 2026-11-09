@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="add()">足し算する</button>
+    <script>
+        function add() {
+            // Number() を使って prompt() の戻り値を直接数値に変える
+            const a = Number(prompt("1つ目の数を入力してください"));
+            const b = Number(prompt("2つ目の数を入力してください"));
+
+            // 1 - 2 の typeof で型を確かめる
+            console.log(typeof (1 - 2)); // "number" が表示されます
+
+            // 正しく数値として足し算される
+            const answer = a + b;
+
+            console.log(`${a} + ${b} = ${answer}`);
+            alert(`答えは ${answer} です`);
+        }
+    </script>
+</body>
+</html>
